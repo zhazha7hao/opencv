@@ -14,8 +14,8 @@ DEFAULTS = {
                "min_width": 3.0, "max_width": 60.0,
                "min_aspect": 1.3, "max_aspect": 20.0,
                "min_fill": 0.25, "max_tilt": 35.0, "core_v": 245},
-    "match": {"min_len_ratio": 0.35, "max_angle_diff": 15.0,
-              "min_ratio": 0.9, "max_ratio": 3.5, "max_along": 0.5},
+    "match": {"min_len_ratio": 0.35, "max_angle_diff": 18.0,
+              "min_ratio": 0.9, "max_ratio": 3.5, "max_along": 0.6},
 }
 
 
