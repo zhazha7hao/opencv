@@ -35,7 +35,7 @@ def bar_axis(cnt):
 
 def find_bars(mask, hsv_img, mc):
     contours, hierarchy = cv2.findContours(mask, cv2.RETR_CCOMP,cv2.CHAIN_APPROX_SIMPLE)
-    hierarchy = hierarchy[0]
+    hierarchy = hierarchy[0] if hierarchy is not None else []
     parent_of = [int(h[3]) for h in hierarchy]
     children = {}
     for i, p in enumerate(parent_of):
